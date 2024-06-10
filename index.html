@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Gerador de Senha</title>
+  <link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+  <div id="container">
+    <div id="inputs">
+      <div id="containerSenha">
+        <p id="senha">Sua senha aparecera aqui</p>
+      </div>
+
+      <div id="containerRange">
+        <input type="range" id="range" min="2" max="20" step="1" onchange="simm()" />
+        <p id="valorRange">11</p>
+      </div>
+
+      <div id="containerInputsCheckbox">
+        <div class="inputsCheckbox">
+          <input type="checkbox" id="letrasMaiusculas" class="inputTypeCheckbox" />
+          <label for="letrasMaiusculas">Letras Maiusculas</label>
+        </div>
+
+        <div class="inputsCheckbox">
+          <input type="checkbox" id="letrasMinusculas" class="inputTypeCheckbox" />
+          <label for="letrasMinusculas">Letras Minúsculas</label>
+        </div>
+
+        <div class="inputsCheckbox">
+          <input type="checkbox" id="numeros" class="inputTypeCheckbox" />
+          <label for="numeros">Numeros</label>
+        </div>
+
+        <div class="inputsCheckbox">
+          <input type="checkbox" id="simbolos" class="inputTypeCheckbox" />
+          <label for="simbolos">Simbolos especiais</label>
+        </div>
+
+      </div>
+    </div>
+    <button id="enviar" onclick="enviar()">Gerar Senha</button>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
